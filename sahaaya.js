@@ -6,5 +6,12 @@ var _ = function(elt, command, fn) {
 }
 
 _($("#enableSahaaya"), "click", function() {
-	alert("X");
+	$(".disabled").style.display = "none";
+	$(".enabled").style.display = "block";
+	$("body").classList.add("on");
+});
+_($("#disableSahaaya"), "click", function() {
+	$(".disabled").style.display = "block";
+	$(".enabled").style.display = "none";
+	$("body").classList.remove("on");
 });

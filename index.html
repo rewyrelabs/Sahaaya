@@ -5,11 +5,8 @@
 		<style type="text/css">
 			body {
 				padding: 1px 10px 10px 10px;
-				width: 200px;
+				width: 300px;
 				text-align: center;
-			}
-			h2 {
-				font-size: 120%;
 			}
 			button {
 				width: 100%;
@@ -18,16 +15,16 @@
 				font-weight: bold;
 				outline: none;
 				border: none;
-				border-radius: 5px;
+				border-radius: 25px;
 				cursor: pointer;
 				background: #ddd;
 			}
 			button.primary {
-				background: #2792f3;
+				background: #1153FC;
 				color: white;
 			}
 			button.primary:hover {
-				background: #2ca6f1;
+				background: #1153FC;
 			}
 			.enabled {
 				display: none;
@@ -35,16 +32,15 @@
 		</style>
 	</head>
 	<body>
+		<h1>Sahaaya</h1>
+		<p>Sahaaya breathes life into your old web experience.</p>
 		<div class="enabled">
-			<h2>Sahaaya is enabled.</h2>
-			<p>On disabling Sahaaya, your experience on the web will be back to the dull old kind.</p>
+			<button class="primary" id="enableSahaaya">Start Sahaya</button>			
 		</div>
 		<div class="disabled">
-			<h2>Sahaaya is disabled.</h2>
-			<p>On enabling Sahaaya, your experience on the web will be changed to best suit your needs.</p>
+			<button class="primary" id="disableSahaaya">Stop Sahaya</button>			
 		</div>
-		<button class="primary" id="enableSahaaya">Enable Sahaaya</button>
-		<button>Preferences</button>
+		<button>Settings</button>
 		<script type="text/javascript" src="sahaaya.js"></script>
 	</body>
 </html>

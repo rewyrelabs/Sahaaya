@@ -13,15 +13,22 @@ var Sahaaya = function(){
 	}
 }
 Sahaaya.startService = function(){
+	localStorage.setItem("serviceStatus", "start");
 	$(".disabled").style.display = "none";
 	$(".enabled").style.display = "block";
 	$("body").classList.add("on");
+	chrome.storage.sync.set({
+		serviceStatus: "start"
+	});
 }
 Sahaaya.stopService = function(){
 	localStorage.setItem("serviceStatus", "stop");
 	$(".disabled").style.display = "block";
 	$(".enabled").style.display = "none";
 	$("body").classList.remove("on");
+	chrome.storage.sync.set({
+		serviceStatus: "stop"
+	});
 }
 
 _($("#enableSahaaya"), "click", function(){
@@ -30,7 +37,6 @@ _($("#enableSahaaya"), "click", function(){
 _($("#disableSahaaya"), "click", function(){
 	Sahaaya.stopService();
 });
-
 
 _(document, "DOMContentLoaded", function(){
 	Sahaaya();

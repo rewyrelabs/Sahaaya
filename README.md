@@ -1,4 +1,8 @@
+![jpg](assets/header.jpg)
+
 # Sahaaya - Making web accessible for everyone
+
+![gif](assets/readme.gif)
 
 ## What it does
 Sahaaya is browser extension that changes the appearence of the entire web based on your design customizations and preferences. It’s especially helpful for people with dyslexia, because it comes built-in with an option that adjusts the color-contrast ratio and typography. We provide a huge variety of color contrast schemes with different font styles so that every user can adapt to his/her preferences.
